@@ -2,6 +2,15 @@
   "name": "work-perks",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinash6982/work-perks.git"
+  },
+  "author": "Avinash Ghosh",
+  "bugs": {
+    "url": "https://github.com/avinash6982/work-perks/issues"
+  },
+  "homepage": "https://github.com/avinash6982/work-perks#readme",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
