@@ -46,6 +46,7 @@ const Navbar = () => {
   const menuId = "primary-search-account-menu";
   const renderMenu = (
     <Menu
+      data-testid="desktop-menu"
       anchorEl={anchorEl}
       anchorOrigin={{
         vertical: "top",
@@ -104,6 +105,7 @@ const Navbar = () => {
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <Menu
+      data-testid="mobile-menu"
       anchorEl={mobileMoreAnchorEl}
       anchorOrigin={{
         vertical: "top",
@@ -119,7 +121,7 @@ const Navbar = () => {
       onClose={handleMobileMenuClose}
     >
       {Object.keys(mobileMenuItems).map((key) => (
-        <MenuItem key={key}>
+        <MenuItem data-testid="mobile-menu-items" key={key}>
           <IconButton
             size="large"
             aria-label={mobileMenuItems[key].label}
@@ -142,10 +144,11 @@ const Navbar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" elevation={0} color="default">
         <Toolbar>
-          <AbcIcon sx={{ fontSize: 70, color: "#387BAA" }} />
+          <AbcIcon data-testid="icon" sx={{ fontSize: 70, color: "#387BAA" }} />
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
+              data-testid="menu-items"
               size="large"
               aria-label="show new mails"
               color="inherit"
@@ -155,6 +158,7 @@ const Navbar = () => {
               </Badge>
             </IconButton>
             <IconButton
+              data-testid="menu-items"
               size="large"
               aria-label="show new notifications"
               color="inherit"
@@ -164,6 +168,7 @@ const Navbar = () => {
               </Badge>
             </IconButton>
             <IconButton
+              data-testid="menu-items"
               size="large"
               edge="end"
               aria-label="account of current user"

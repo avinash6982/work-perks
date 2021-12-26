@@ -21,6 +21,7 @@ const ImageGridItem = ({ image, large, onClick, selected, loading }) =>
   ) : loading ? (
     <Grid item xs={8} md={6} lg={4}>
       <Skeleton
+        data-testid="skeleton"
         variant="rectangular"
         style={{
           borderRadius: 5,
