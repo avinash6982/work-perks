@@ -34,6 +34,7 @@ const Gallery = () => {
       }}
     >
       <Grid
+        data-testid="gallery-container"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fill, 6rem)",

@@ -41,6 +41,7 @@ const AddImageDialog = ({ open, handleClose }) => {
                   {SELECT_IMAGE_TITLE}
                 </Typography>
                 <Button
+                  data-testId="close-button"
                   onClick={() => handleClose()}
                   style={{ position: "absolute", right: 0, top: 0 }}
                 >
@@ -67,6 +68,7 @@ const AddImageDialog = ({ open, handleClose }) => {
                 sx={{ borderTop: 1, borderColor: "divider" }}
               >
                 <Button
+                  data-testid="cancel-button"
                   variant="contained"
                   style={{
                     backgroundColor: "#CECECE",
@@ -78,6 +80,7 @@ const AddImageDialog = ({ open, handleClose }) => {
                   {CANCEL_BUTTON_LABEL}
                 </Button>
                 <Button
+                  data-testid="submit-button"
                   onClick={() => onSubmit()}
                   variant="contained"
                   color="primary"

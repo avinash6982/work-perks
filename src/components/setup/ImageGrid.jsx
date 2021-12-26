@@ -27,6 +27,7 @@ const ImageGrid = () => {
   const AddImageButton = () => (
     <Grid item xs={6} md={4} lg={2}>
       <Button
+        data-testid="add-image-button"
         style={{
           backgroundColor: "#E0E0E0",
           height: "5rem",
@@ -58,6 +59,7 @@ const ImageGrid = () => {
         {IMAGE_GRID_TITLE}
       </Typography>
       <Grid
+        data-testid="image-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fill, 6rem)",

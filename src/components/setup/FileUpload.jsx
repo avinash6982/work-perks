@@ -40,6 +40,7 @@ const FileUpload = () => {
 
   return (
     <Box
+      data-testid="dropzone-container"
       onDragOver={(e) => e.preventDefault()}
       onDrop={(e) => handleDrop(e)}
       style={{
@@ -55,6 +56,7 @@ const FileUpload = () => {
         </>
       ) : (
         <label
+        data-testid="dropzone"
           style={{
             border: "5px dotted #ccc",
             height: "100%",
@@ -67,7 +69,7 @@ const FileUpload = () => {
         >
           <Box>
             <Container align="center">
-              <FileCopyIcon style={{ fontSize: "60", color: "#707070" }} />
+              <FileCopyIcon data-testid="file-icon" style={{ fontSize: "60", color: "#707070" }} />
             </Container>
             <Container>
               <Typography
@@ -87,7 +89,7 @@ const FileUpload = () => {
                 {DROPZONE_2}
               </Typography>
             </Container>
-            <Container style={{ padding: 20 }} align="center">
+            <Container data-testid="file-upload-input" style={{ padding: 20 }} align="center">
               <Input
                 id="file-upload"
                 fullWidth

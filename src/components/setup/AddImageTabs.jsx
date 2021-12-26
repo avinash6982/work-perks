@@ -58,10 +58,10 @@ const AddImageTabs = () => {
           <Tab label="Upload" {...a11yProps(1)} />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0}>
+      <TabPanel data-testid="tab-item" value={value} index={0}>
         <Gallery />
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel data-testid="tab-item" value={value} index={1}>
         <FileUpload />
       </TabPanel>
     </Box>
